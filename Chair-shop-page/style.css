@@ -41,7 +41,8 @@ body {
 }
 
 .container {
-  width: 96rem;
+  max-width: 96rem;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -100,14 +101,31 @@ h2 {
 
 /* HEADER */
 header {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 8rem;
-  margin-top: 6.4rem;
+  margin-top: 6.4rem; */
 }
 
 .header-text-box {
   align-self: center;
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+    margin-top: 6.4rem;
+}
+
+.small-header-content {
+  display: none;
+}
+
+.small-header-content-container {
+  display: grid;
+  gap: 2.4rem;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* 44 / 52 / 62 */
