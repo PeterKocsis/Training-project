@@ -6,13 +6,6 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 
-/* Colours palette
-Main color: #d8cfafff;
-Gray color: #2e3532ff;
-Accent color: #cf5c36ff;
---air-force-blue: #4c86a8ff;
---vivid-sky-blue: #5adbffff; */
-
 $color-primary: #087f5b;
 $color-primary-hover: #099268;
 
@@ -20,14 +13,6 @@ $color-gray: #343a40;
 $color-gray-light: #495057;
 
 $color-accent: #f8f9fa;
-
-// :root {
-//   --main-color: #087f5b;
-//   --gray-color: #343a40;
-//   --accent-color: #f8f9fa;
-//   --hover-tilt-color: #099268;
-//   --gray-color-light: #495057;
-// }
 
 * {
   margin: 0;
@@ -108,12 +93,6 @@ h2 {
 /* ------------------------ */
 
 /* HEADER */
-header {
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 8rem;
-  margin-top: 6.4rem; */
-}
 
 .header-text-box {
   align-self: center;
