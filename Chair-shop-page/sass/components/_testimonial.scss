@@ -1,0 +1,31 @@
+@import "../abstracts/variables";
+
+
+.testimonial-section {
+  background-color: $color-primary;
+  color: $color-accent;
+  padding: 2.4rem;
+  border-radius: 1rem;
+}
+
+.testimonial-box {
+  grid-column: 2 / -1;
+  align-self: center;
+}
+
+.testimonial-box h2 {
+  margin-bottom: 2.4rem;
+  font-size: 2.4rem;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 2.4rem;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: $color-primary-text-light;
+}
+
+.testimonial-author {
+  color: $color-primary-text-dark;
+}
