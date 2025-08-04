@@ -1,0 +1,14 @@
+{
+  "name": "chair-shop",
+  "version": "1.0.0",
+  "description": "Landing page for a fictionary chair shop",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css",
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}
