@@ -1,3 +1,5 @@
+@import "../abstracts/mixins";
+
 .header-text-box {
   align-self: center;
 }
@@ -8,14 +10,33 @@ section {
 }
 
 .header-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8rem;
+  margin-top: 6.4rem;
+
+  @include respond-to("tablet-port") {
+    display: none;
+  }
+
+  @include respond-to("mobile") {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 8rem;
-    margin-top: 6.4rem;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    margin-top: 4.8rem;
+  }
 }
 
 .small-header-content {
   display: none;
+
+  @include respond-to("tablet-port") {
+    display: block;
+  }
+
+  @include respond-to("mobile") {
+    display: none;
+  }
 }
 
 .small-header-content-container {
@@ -29,7 +50,7 @@ h1 {
   margin-bottom: 3.2rem;
   font-size: 4.4rem;
   line-height: 1.1;
-  letter-spacing: -.1rem;
+  letter-spacing: -0.1rem;
 }
 
 /* 16 / 18 / 20 / 24 / 30  */

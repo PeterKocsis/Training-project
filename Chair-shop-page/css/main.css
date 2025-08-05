@@ -14,9 +14,30 @@ FONT SIZE SYSTEM (px)
 html {
   font-size: 62.5%; /* 1rem = 10px */
 }
+@media (max-width: 68.75em) {
+  html {
+    font-size: 56.25%; /* 1rem = 9px */
+  }
+}
+@media (max-width: 48.125em) {
+  html {
+    font-size: 50%; /* 1rem = 8px */
+  }
+}
+@media (max-width: 32.5em) {
+  html {
+    font-size: 43.75%; /* 1rem = 7px */
+  }
+}
 
 body {
   border-bottom: 0.8rem solid #087f5b;
+}
+@media (max-width: 68.75em) {
+  body {
+    display: flex;
+    justify-items: center;
+  }
 }
 
 .container {
@@ -39,6 +60,17 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 8rem;
+}
+@media (max-width: 58.4375em) {
+  .grid-3-cols {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.8rem;
+  }
+}
+@media (max-width: 32.5em) {
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+  }
 }
 
 body {
@@ -97,10 +129,21 @@ body {
   padding: 2.4rem;
   border-radius: 1rem;
 }
+@media (max-width: 48.125em) {
+  .testimonial-section .grid-3-cols {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+}
 
 .testimonial-box {
   grid-column: 2/-1;
   align-self: center;
+}
+@media (max-width: 48.125em) {
+  .testimonial-box {
+    grid-column: unset;
+  }
 }
 
 .testimonial-box h2 {
@@ -182,9 +225,32 @@ section {
   column-gap: 8rem;
   margin-top: 6.4rem;
 }
+@media (max-width: 48.125em) {
+  .header-content {
+    display: none;
+  }
+}
+@media (max-width: 32.5em) {
+  .header-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    margin-top: 4.8rem;
+  }
+}
 
 .small-header-content {
   display: none;
+}
+@media (max-width: 48.125em) {
+  .small-header-content {
+    display: block;
+  }
+}
+@media (max-width: 32.5em) {
+  .small-header-content {
+    display: none;
+  }
 }
 
 .small-header-content-container {

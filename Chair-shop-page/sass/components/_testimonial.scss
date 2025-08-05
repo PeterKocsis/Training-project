@@ -1,16 +1,27 @@
 @import "../abstracts/variables";
-
+@import "../abstracts/mixins";
 
 .testimonial-section {
   background-color: $color-primary;
   color: $color-accent;
   padding: 2.4rem;
   border-radius: 1rem;
+
+  .grid-3-cols {
+    @include respond-to("tablet-port") {
+      grid-template-columns: 1fr;
+      gap: 4.8rem;
+    }
+  }
 }
 
 .testimonial-box {
   grid-column: 2 / -1;
   align-self: center;
+
+  @include respond-to("tablet-port") {
+    grid-column: unset;
+  }
 }
 
 .testimonial-box h2 {
