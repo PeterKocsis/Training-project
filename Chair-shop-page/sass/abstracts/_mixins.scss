@@ -4,21 +4,21 @@
             @content;
         }
     } 
-    @if $breakpoint == 'tablet-port' {
+    @else if $breakpoint == 'tablet-port' {
         @media (max-width: 48.125em) { // 770px / 16 = 48.125em
             @content;
         }
     }
-    @if $breakpoint == 'tablet-land' {
+    @else if $breakpoint == 'tablet-land' {
         @media (max-width: 58.4375em) { // 935px / 16 = 58.4375em
             @content;
         }
     } 
-    @if $breakpoint == 'desktop' {
+    @else if $breakpoint == 'desktop' {
         @media (max-width: 68.75em) { // 1100px / 16 = 68.75em
             @content;
         }
     } @else {
-        @warn "Unknown breakpoint: #{$breakpoint}. Please use 'mobile', 'tablet', or 'desktop'.";
+        @warn "Unknown breakpoint: #{$breakpoint}. Please use 'mobile', 'tablet-port', 'tablet-land', or 'desktop'.";
     }
 }
